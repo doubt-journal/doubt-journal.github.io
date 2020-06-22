@@ -17,13 +17,18 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
+  font: 13.34px Garamond, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
+  color: #a00;
+}
+
+strong {
+  color: #a00;
 }
 
 h1 {
@@ -35,15 +40,8 @@ p {
 }
 
 a {
-  color: #00a;
-}
-
-a:hover {
-  color: black;
-}
-
-a:visited {
-  color: #a0a;
+  color: #aaa;
+  /* text-decoration: none; */
 }
 
 table {
@@ -200,3 +198,51 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  font-style: italic;
+  margin: 25px 25% 25px 25%;
+  position: relative;
+}
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #666;
+  text-align: center;
+}
+
+blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #a00;
+}
+
+textbox {
+  display: block;
+  background: #ebebeb;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 0.5em 0 0.5em;
+  position: relative;
+}
