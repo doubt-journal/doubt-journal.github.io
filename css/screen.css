@@ -22,8 +22,33 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-size: 130%;
+  color: #a00;
+}
+
+h2 {
+  font-size: 120%;
+  color: #a00;
+}
+
+h3 {
+  font-size: 110%;
+  color: #a00;
+}
+
+h4 {
   font-size: 100%;
+  color: #a00;
+}
+
+h5 {
+  font-size: 90%;
+  color: #a00;
+}
+
+h6 {
+  font-size: 80%;
   color: #a00;
 }
 
@@ -245,4 +270,30 @@ textbox {
   border-color: #eee;
   padding: 0.5em 0 0.5em;
   position: relative;
+}
+
+
+.mybutton {
+  background-color: white;
+  color: black;
+  border: 2px solid #a00; /* Green */
+}
+
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+side {
+  float:none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  margin: 0;
+  margin-right: 50px;
+  font: 14px/1.4 $helvetica;
+  font-style: italic;
+  color: $gray;
 }
