@@ -5,8 +5,19 @@ permalink: delayed-bandits
 rating: 5
 ref: https://arxiv.org/abs/1807.02089
 ---
+# Linear Bandits with Stochastic Delayed Feedback
 
-## Linear Bandits with Stochastic Delayed Feedback
+## Review
+
+To me, the interesting part of this paper is the setting. Unfortunately for the authors, that isn't new.
+I am interested in how to design a learner that exploits some kind of structure within the delayed bandit problem to achieve better performance. This paper provides and characterises a baseline, a learner that does not exploit any structure in the delays.
+
+<div class="center">
+<strong>Rating</strong>: {{ page.rating }} / 10
+</div>
+<hr>
+
+## Overview
 
 <i>Rather than recieving feedback when you want it, in this setting you recieve it after an unknown delay. How do these delays effect your ability to efficiently to learn?</i>
 
@@ -247,7 +258,8 @@ universal constant.
 
 We can see that $\sqrt{T}$ performance is possible, while the OTFLinUCB learner achieves approximately $\sqrt{T\log T}$.
 
-## Other thoughts
+<hr>
+## Additional thoughts
 
 ### A prior on delay distributions
 
@@ -297,6 +309,7 @@ In this setting we would require;
 
 - actions do not effect the outcomes of other actions,
 - the accumulated rewards are bounded $\sum_{0}^{\infty} y_t(A_s) < \infty$.
+
 
 <!-- #### Delayed and aggregated rewards
 
